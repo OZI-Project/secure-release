@@ -12,9 +12,9 @@ const build = async function(){
     core.getBooleanInput('sdist') ? ['--sdist'] : [],
     `--wheel-sign-token=${core.getInput('wheel-sign-token')}`
   ];
-  
   try {
-    await exec('python', args.flat());
+    await exec('source', ['.tox/invoke/bin/activate'])
+    await exec('python', args.flat(), {'silent': true});
   } catch (error) {
     core.setFailed(error.message);
   }
