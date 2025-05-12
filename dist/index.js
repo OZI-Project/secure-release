@@ -27570,7 +27570,7 @@ const build = async function(){
     `--wheel-sign-token=${core.getInput('wheel-sign-token')}`
   ];
   try {
-    await exec('source', ['.tox/invoke/bin/activate'])
+    await exec('.', ['.tox/invoke/bin/activate'])
     await exec('python', args.flat(), {'silent': true});
   } catch (error) {
     core.setFailed(error.message);
