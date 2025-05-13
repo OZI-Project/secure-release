@@ -27558,8 +27558,9 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(6420);
 const { exec } = __nccwpck_require__(5164);
 
-core.setSecret(core.getInput('wheel-sign-token'));
-
+if (core.getInput('wheel-sign-token')) {
+  core.setSecret(core.getInput('wheel-sign-token'));
+}
 const build = async function(){
   var args = [
     '-m',

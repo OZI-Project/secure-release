@@ -1,6 +1,6 @@
 {
   "name": "@ozi-project/ozi-secure-release",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "OZI secure release for GitHub actions",
   "main": "index.js",
   "type": "commonjs",
