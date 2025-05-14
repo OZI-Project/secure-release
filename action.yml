@@ -13,6 +13,8 @@ inputs:
     description: 'Token used to sign wheel binaries'
     required: true
     default: ''
+  ozi-internal:
+    default: false
 runs:
   using: 'node20'
   main: 'dist/index.js'
