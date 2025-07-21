@@ -17,7 +17,7 @@ const build = async function(){
     core.getInput('wheel-sign-token') & !debug ? `--wheel-sign-token=${core.getInput('wheel-sign-token')}` : [],
   ];
   try {
-    await exec('python', '-m', 'pipx', 'install', 'meson')
+    await exec('python', '-m', 'pipx', 'install', 'meson');
     await exec('python', args.flat(), {silent: !debug});
   } catch (error) {
     core.setFailed(error.message);
