@@ -20,7 +20,7 @@
   "homepage": "https://github.com/OZI-Project/secure-release#readme",
   "dependencies": {
     "@actions/core": "^3.0.0",
-    "@actions/exec": "^1.1.1"
+    "@actions/exec": "^3.0.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.3"
