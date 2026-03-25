@@ -1,5 +1,5 @@
-const core = require('@actions/core');
-const { exec } = require('@actions/exec');
+const core = import('@actions/core');
+const { exec } = import('@actions/exec');
 const sdist = core.getBooleanInput('sdist');
 const debug = core.getBooleanInput('debug');
 const oziInternal = core.getBooleanInput('ozi-internal');
